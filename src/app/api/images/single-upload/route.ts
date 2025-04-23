@@ -1,3 +1,5 @@
+//@ts-ignore
+
 import { SingleImageUploadSchema } from "@/app/schemas/images.schema";
 import { auth } from "@/auth";
 import { MAX_IMAGE_SIZE } from "@/config/constants";

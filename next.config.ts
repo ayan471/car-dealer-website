@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     authInterrupts: true,
-    nodeMiddleware: true,
+    // nodeMiddleware: true,
     reactCompiler: true,
     optimizeCss: true,
     optimizeServerReact: true,

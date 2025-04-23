@@ -94,5 +94,6 @@
   },
   "prisma": {
     "seed": "ts-node -r tsconfig-paths/register --compiler-options {\"module\":\"CommonJS\"} prisma/seed/seed.ts"
-  }
+  },
+  "build:noauth": "SKIP_AUTH=true bun run build"
 }

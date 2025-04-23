@@ -71,6 +71,7 @@ export const config = {
     signOut: "/auth/sign-out",
     error: "/auth/error",
   },
+
   callbacks: {
     async jwt({ user, token }) {
       const session = await prisma.session.create({

@@ -9,8 +9,6 @@ import { forbidden } from "next/navigation";
 import { NextResponse } from "next/server";
 import { v4 as uuidv4 } from "uuid";
 
-export const maxDuration = 60;
-
 export const POST = auth(async (req) => {
   if (!req.auth) forbidden();
 

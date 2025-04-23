@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   compress: true,
   reactStrictMode: true,
   compiler: {
-    removeConsole: process.env.NODE_ENV === "production",
+    removeConsole: process.env.NODE_ENV === "development",
   },
   experimental: {
     authInterrupts: true,

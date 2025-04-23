@@ -52,6 +52,14 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  serverRuntimeConfig: {
+    api: {
+      bodyParser: {
+        sizeLimit: "4mb", // Adjust as needed
+      },
+      responseLimit: false,
+    },
+  },
 };
 
 export default nextConfig;

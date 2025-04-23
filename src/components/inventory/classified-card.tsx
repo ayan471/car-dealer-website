@@ -74,6 +74,7 @@ export const ClassifiedCard = (props: ClassifiedCardProps) => {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.2 }}
+          //@ts-ignore
           className="bg-white relative rounded-md shadow-md overflow-hiddem flex flex-col"
         >
           <div className="aspect-3/2 relative">

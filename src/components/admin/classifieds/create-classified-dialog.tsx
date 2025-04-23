@@ -36,8 +36,8 @@ export const CreateClassifiedDialog = () => {
   const imageForm = useForm<SingleImageType>({
     resolver: zodResolver(SingleImageSchema),
   });
-
   const createForm = useForm<StreamableSkeletonProps>({
+    //@ts-ignore
     resolver: zodResolver(
       ClassifiedAISchema.extend({
         make: z.object({

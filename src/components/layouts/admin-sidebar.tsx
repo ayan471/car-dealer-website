@@ -64,6 +64,7 @@ export const AdminSidebar = () => {
 
   return (
     <motion.div
+      //@ts-ignore
       className="bg-black/20 h-screen overflow-hidden flex flex-col"
       animate={isSidebarExpanded ? "expanded" : "collapsed"}
       variants={sidebarVariants}
@@ -79,6 +80,7 @@ export const AdminSidebar = () => {
               {isSidebarExpanded ? (
                 <motion.div
                   key="expanded-logo"
+                  //@ts-ignore
                   className="absolute inset-0"
                   variants={logoVariants}
                   initial="initial"
@@ -96,6 +98,7 @@ export const AdminSidebar = () => {
               ) : (
                 <motion.div
                   key="collapsed-logo"
+                  //@ts-ignore
                   className="absolute inset-0"
                   variants={logoVariants}
                   initial="initial"
@@ -129,6 +132,7 @@ export const AdminSidebar = () => {
                     animate={isSidebarExpanded ? "expanded" : "collapsed"}
                     initial="collapsed"
                     transition={{ duration: 0.3, ease: "easeInOut" }}
+                    //@ts-ignore
                     className="whitespace-nowrap overflow-hidden"
                   >
                     {item.name}

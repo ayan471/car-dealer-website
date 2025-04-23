@@ -8,7 +8,6 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     authInterrupts: true,
-    // nodeMiddleware: true,
     reactCompiler: true,
     optimizeCss: true,
     optimizeServerReact: true,
@@ -52,13 +51,12 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  serverRuntimeConfig: {
-    api: {
-      bodyParser: {
-        sizeLimit: "4mb", // Adjust as needed
-      },
-      responseLimit: false,
+  // API configuration should be at the top level, not inside serverRuntimeConfig
+  api: {
+    bodyParser: {
+      sizeLimit: "4mb",
     },
+    responseLimit: false,
   },
 };
 
